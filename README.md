@@ -1,1 +1,2 @@
-*** In the developing phase
+# StudentInfoMicroApp ( personal Project )
+*In the developing phase
