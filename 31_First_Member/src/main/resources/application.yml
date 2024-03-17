@@ -1,0 +1,27 @@
+server:
+  port: 1234
+  
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    username: root
+    password: amol
+    url: jdbc:mysql://localhost:3306/okkbosslearnyou
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+  application:
+    name: firstmemberapplication
+  boot:
+     admin:
+       client:
+         url:
+         - http://localhost:1111
+  
+eureka:
+  client:
+    service-url:
+      DefaultZone:
+        http://localhost:8761/eureka/
+        

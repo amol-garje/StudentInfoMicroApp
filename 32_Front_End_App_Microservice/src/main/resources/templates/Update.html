@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="ISO-8859-1">
+<title>update</title>
+<link href="/CSS/Update.css">
+</head>
+<body>
+
+    <li><a href="/displaystudent">Display</a></li>
+ 
+    <h1 id="wlc">Update Student Data</h1>
+       
+       <div>
+          <div class="id1">
+          <center>
+            <fieldset class="fls1">
+          <legend>Add-User</legend>
+          <form action="/mainupdate" method="post">
+                <table>
+                
+                 <tr>
+                   <td>Id :</td>
+                   <td><input type="number" name="id" th:value="${dta.id}"></td>
+                </tr>
+                
+                <tr>
+                   <td>Name :</td>
+                   <td><input type="text" placeholder="Enter Your Name Here :" name="name" value="amol" th:value="${dta.name}"></td>
+                </tr>
+                
+                <tr>
+                   <td>Passwor:</td>
+                   <td><input type="password" placeholder="Enter Your Name Here :" name="password" th:value="${dta.password}"></td>
+                </tr>
+                
+                <tr>
+                   <td>Email :</td>
+                   <td><input type="email" placeholder="Enter Your Name Here :" name="email" th:value="${dta.email}"></td>
+                </tr>
+                
+                <tr>
+                   <td>Place :</td>
+                   <td><select name="place" th:value="${dta.place}">
+                        <option value="ashti">Ashti</option>
+                        <option value="pune">Pune</option>
+                        <option value="delhi">Delhi</option>
+                   </select></td>
+                </tr>
+                
+                <tr>
+                  <td>Submit</td>
+                  <td><input type="submit">
+                </tr>
+                
+                </table>          
+           </form>
+            </fieldset>
+            </center>
+          </div>
+       </div>
+       
+        
+</body>
+</html>

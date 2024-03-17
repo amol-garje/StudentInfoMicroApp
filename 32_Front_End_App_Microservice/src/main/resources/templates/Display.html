@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="ISO-8859-1">
+<title>Display</title>
+<link rel="stylesheet" href="/CSS/Display.css">
+</head>
+<body>
+
+
+       <ol>
+       <li><a href="/">Home</a></li>
+       <li><a href="/addstudent">AddUser</a></li>
+       <li><a href="/displaystudent">Display</a></li>
+       <li><a href="/contactus">Contact</a></li>
+       </ol>
+
+
+       <h1 id="wlc">Display Page here</h1>
+        
+       <div>
+       <center>
+         
+         <table border="1">
+              <tr>
+                <th>Name</th>
+                <th>Password</th>
+                <th>Email</th>
+                <th>Place</th>
+                <th>Update</th>
+                <th>Delete</th>
+              </tr>
+              <tr th:each="d1:${dta}">
+                 <td th:text="${d1.name}">xyz</td>
+                 <td th:text="${d1.password}">xyz@123</td>
+                 <td th:text="${d1.email}">xyz.hanah@gmail.com</td>
+                 <td th:text="${d1.place}">xyz</td>
+                 <td><a href="/getmapping?id=1" th:href="@{/getmapping(id=${d1.id})}">Update</a></td>
+                 <td><a href="/deletedata?id=1" th:href="@{/deletedata(id=${d1.id})}">Delete</a></td>
+              </tr>
+         </table>
+         
+         </center>
+        
+       </div>
+
+
+</body>
+</html>

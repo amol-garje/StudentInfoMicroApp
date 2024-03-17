@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="ISO-8859-1">
+<title>AddStudent</title>
+<link rel="stylesheet" href="/CSS/Addstudent.css">
+</head>
+<body>
+
+
+       <ol>
+       <li><a href="/">Home</a></li>
+       <li><a href="/addstudent">AddUser</a></li>
+       <li><a href="/displaystudent">Display</a></li>
+       <li><a href="/contactus">Contact</a></li>
+       </ol>
+
+
+       <h1 id="wlc">Add New Student Data</h1>
+       
+       <div>
+          <div class="id1">
+            <fieldset class="fls1">
+          <legend>Add-User</legend>
+          <form action="/fromdata" method="post">
+                <table>
+                
+                <tr>
+                   <td>Name :</td>
+                   <td><input type="text" placeholder="Enter Your Name Here :" name="name"></td>
+                </tr>
+                
+                <tr>
+                   <td>Passwor:</td>
+                   <td><input type="password" placeholder="Enter Your Name Here :" name="password"></td>
+                </tr>
+                
+                <tr>
+                   <td>Email :</td>
+                   <td><input type="email" placeholder="Enter Your Name Here :" name="email"></td>
+                </tr>
+                
+                <tr>
+                   <td>Place :</td>
+                   <td><select name="place">
+                        <option value="ashti">Ashti</option>
+                        <option value="pune">Pune</option>
+                        <option value="delhi">Delhi</option>
+                   </select></td>
+                </tr>
+                
+                <tr>
+                  <td>Submit</td>
+                  <td><input type="submit">
+                </tr>
+                
+                </table>          
+           </form>
+            </fieldset>
+          </div>
+       </div>
+       
+        
+
+
+
+</body>
+</html>
